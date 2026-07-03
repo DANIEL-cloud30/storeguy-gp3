@@ -793,13 +793,33 @@ CONTACT PAGE
     box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-@media (max-width:900px){
+@media (max-width: 900px){
 
-    /* Navigation */
+    header{
+        position:relative;
+        background:#1B5E20;
+    }
+
     .navbar{
         flex-direction:column;
-        gap:20px;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
         padding:20px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo img{
+        width:70px;
+    }
+
+    .logo h2{
+        font-size:32px;
+        line-height:1.2;
     }
 
     .nav-links{
@@ -808,30 +828,26 @@ CONTACT PAGE
         gap:15px;
     }
 
-    /* Hero */
+    .book-btn{
+        margin-top:10px;
+    }
+
+    .page-hero{
+        height:70vh;
+    }
+
+    .page-hero-content{
+        padding-top:120px;
+    }
+
     .page-hero-content h1{
-        font-size:40px;
+        font-size:42px;
     }
 
     .page-hero-content p{
         font-size:18px;
     }
 
-    /* Contact Layout */
-    .contact-container{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    /* Reduce page padding */
-    .contact-section{
-        padding:70px 5%;
-    }
-
-    /* Form inputs */
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button{
-        width:100%;
-    }
 }
+
+    
